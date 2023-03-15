@@ -57,7 +57,22 @@ let rain = true;
   If it is 80 degrees or above, and raining, one should wear a t-shirt and take an umbrella. If it is between 60 and 80 degrees, and raining, one should wear a rain-jacket. If it is 60 degrees or below, one should wear a jacket and carry an umbrella. Come up with your own clothing suggestions based on those temperature parameters when it is not raining.
 */
 
-//CODE HERE
+if (temperature => 80 && rain === true){
+  console.log ("You should wear a tshirt and carry an umbrella");
+}else if (temperature => 60 && temperature < 80 && rain === true){
+  console.log("You should wear a rain-jacket and carry an umbrella");
+}else if (temperature < 60 && rain === true){
+  console.log("You should wear an jacket and carry an umbrella");
+}else if (rain === false && temperature > 80){
+  console.log("You should wear shorts");
+}else if (rain === false && temperature < 79 && temperature > 60){
+  console.log("You should where pants.");
+}else if (rain === false && temperature < 60){
+  console.log("you should bundle up");  
+}else {
+  console.log("the earth blew up");
+}
+
 
 ////////// PROBLEM 5 //////////
 
@@ -65,7 +80,9 @@ let rain = true;
   Create a for-loop that runs 10 times, and on each iteration logs the word 'hello'.
 */
 
-//CODE HERE
+for (let i=0; i < 10; i++){
+  console.log("Hello");
+}
 
 ////////// PROBLEM 6 //////////
 
@@ -73,7 +90,9 @@ let rain = true;
   Create a for-loop that runs 10 times, logging the numbers 1 through 10. Ex, on the first iteration it would log 1, on the second iteration it would log 2.
 */
 
-//CODE HERE
+for (let i = 1; i < 11; i++){
+  console.log(i);
+}
 
 ////////// PROBLEM 7 //////////
 
